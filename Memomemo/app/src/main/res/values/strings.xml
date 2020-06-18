@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">메모메모</string>
+    <string name="password_activity">PasswordActivity</string>
+</resources>

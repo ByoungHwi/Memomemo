@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.example.memomemo.CustomLayout.CustomSwitchPreference
+        android:title="비밀번호 사용"
+        android:defaultValue="false"
+        android:key="isLock"/>
+
+    <PreferenceScreen
+        android:title="비밀번호 설정"
+        android:key="passwordSetting">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.s_notepad"
+            android:targetClass="com.example.s_notepad.Activity.PasswordSettingActivity"
+            />
+
+    </PreferenceScreen>
+
+</PreferenceScreen>
