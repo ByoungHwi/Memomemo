@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.memomemo">
+    package="com.ybh.memomemo">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -18,21 +18,21 @@
         android:roundIcon="@mipmap/ic_launcher_notepad_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.memomemo.Activity.PasswordCheckActivity">
+        <activity android:name="com.ybh.memomemo.Activity.PasswordCheckActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.memomemo.Activity.MainActivity"
+            android:name="com.ybh.memomemo.Activity.MainActivity"
             android:windowSoftInputMode="adjustResize">
         </activity>
-        <activity android:name="com.example.memomemo.Activity.SettingActivity"></activity>
-        <activity android:name="com.example.memomemo.Activity.PasswordSettingActivity"
+        <activity android:name="com.ybh.memomemo.Activity.SettingActivity"></activity>
+        <activity android:name="com.ybh.memomemo.Activity.PasswordSettingActivity"
             android:label="@string/password_activity">
             <intent-filter>
-                <action android:name="com.example.s_notepad.Activity.PasswordSettingActivity"/>
+                <action android:name="com.ybh.memomemo.Activity.PasswordSettingActivity"/>
                 <category android:name="android.intent.category.default"/>
             </intent-filter>
         </activity>
@@ -40,7 +40,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.memomemo.provider"
+            android:authorities="com.ybh.memomemo.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
