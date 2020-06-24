@@ -18,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_notepad_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ybh.memomemo.Activity.PasswordCheckActivity">
+        <activity android:name="com.ybh.memomemo.Activity.PasswordCheckActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -26,11 +27,14 @@
         </activity>
         <activity
             android:name="com.ybh.memomemo.Activity.MainActivity"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name="com.ybh.memomemo.Activity.SettingActivity"></activity>
+        <activity android:name="com.ybh.memomemo.Activity.SettingActivity"
+            android:screenOrientation="portrait"></activity>
         <activity android:name="com.ybh.memomemo.Activity.PasswordSettingActivity"
-            android:label="@string/password_activity">
+            android:label="@string/password_activity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.ybh.memomemo.Activity.PasswordSettingActivity"/>
                 <category android:name="android.intent.category.default"/>
