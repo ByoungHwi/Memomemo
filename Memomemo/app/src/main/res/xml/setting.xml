@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.ybh.memomemo.CustomLayout.CustomSwitchPreference
+    <com.ybh.memomemo.Others.CustomLayout.CustomSwitchPreference
         android:title="비밀번호 사용"
         android:defaultValue="false"
         android:key="isLock"/>
@@ -12,7 +12,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.ybh.memomemo"
-            android:targetClass="com.ybh.memomemo.Activity.PasswordSettingActivity"
+            android:targetClass="com.ybh.memomemo.view.password.passwordSetting.PasswordSettingActivity"
             />
 
     </PreferenceScreen>

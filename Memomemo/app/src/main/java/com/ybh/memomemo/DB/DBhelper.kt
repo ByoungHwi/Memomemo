@@ -38,7 +38,7 @@ class DBhelper(context : Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_
 
     fun updateNote(noteData: NoteData) {
         val db = this.writableDatabase
-        db.execSQL("UPDATE Notes SET title = '${noteData.title}', text = '${noteData.text}' WHERE id = '${noteData.id}'")
+        db.execSQL("UPDATE Notes SET title = '${noteData.title}', text = '${noteData.text}', thumbnail = '${noteData.thumnail}' WHERE id = '${noteData.id}'")
         db.close()
     }
 

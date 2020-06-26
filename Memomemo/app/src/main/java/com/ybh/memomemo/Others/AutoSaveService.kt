@@ -4,8 +4,8 @@ import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.os.IBinder
-import com.ybh.memomemo.Activity.FRAGMENT_ADD
-import com.ybh.memomemo.Activity.MainActivity
+import com.ybh.memomemo.view.main.FRAGMENT_ADD
+import com.ybh.memomemo.view.main.MainActivity
 
 class AutoSaveService(val context : Context) : Service(){
     override fun onBind(intent: Intent?): IBinder? {
